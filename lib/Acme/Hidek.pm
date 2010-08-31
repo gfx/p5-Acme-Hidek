@@ -26,7 +26,7 @@ has age => (
     is      => 'ro',
     isa     => 'Int',
     lazy    => 1,
-    default => sub { Time::Piece->localtime->year - BIRTH_YEAR - 1 },
+    default => sub { Time::Piece->localtime->year - BIRTH_YEAR },
 );
 
 has birthdate => (
