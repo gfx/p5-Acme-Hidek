@@ -6,8 +6,8 @@ use Time::Piece;
 
 our $VERSION = '0.0001';
 
-#use XSLoader;
-#XSLoader::load(__PACKAGE__, $VERSION);
+use XSLoader;
+XSLoader::load(__PACKAGE__, $VERSION);
 
 use constant {
     BIRTH_YEAR  => 1970,
@@ -19,7 +19,7 @@ has age => (
     is      => 'ro',
     isa     => 'Int',
     lazy    => 1,
-    default => sub { BIRTH_YEAR - Time::Piece->now->year },
+    default => sub { Time::Piece->localtime->year - BIRTH_YEAR - 1 },
 );
 
 has birthdate => (
