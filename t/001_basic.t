@@ -8,7 +8,8 @@ use Time::Piece;
 
 my $hidek = Acme::Hidek->new();
 
-is $hidek->age, Time::Piece->localtime->year - 1970;
+cmp_ok $hidek->age,  '>=', 39;
+cmp_ok $hidek->agef, '>',  39;
 
 is $hidek->birthdate->year,  1970;
 is $hidek->birthdate->mon,      9;

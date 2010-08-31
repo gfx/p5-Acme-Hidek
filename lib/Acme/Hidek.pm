@@ -10,7 +10,7 @@ if ($^O eq 'MSWin32') {
    require 'Win32/Console/ANSI.pm';
    binmode STDOUT, ":raw :encoding(cp932)";
 }
-else if($^O eq 'cygwin') {
+elsif($^O eq 'cygwin') {
     binmode STDOUT, ":raw :encoding(cp932)";
 }
 
@@ -25,11 +25,24 @@ use constant {
     BIRTH_DAY   => 2,
 };
 
+has agef => (
+    is      => 'ro',
+    isa     => 'Num',
+    lazy    => 1,
+    default => sub {
+        my($self) = @_;
+        return +(Time::Piece->localtime - $self->birthdate)->years;
+    },
+);
+
 has age => (
     is      => 'ro',
     isa     => 'Int',
     lazy    => 1,
-    default => sub { Time::Piece->localtime->year - BIRTH_YEAR },
+    default => sub {
+        my($self) = @_;
+        return int( $self->agef );
+    },
 );
 
 has birthdate => (
