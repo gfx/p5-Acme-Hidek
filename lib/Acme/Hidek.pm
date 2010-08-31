@@ -41,7 +41,7 @@ __END__
 
 =head1 NAME
 
-Acme::Hidek - Perl extention to do something
+Acme::Hidek - Happy birthday hidek!
 
 =head1 VERSION
 
@@ -51,28 +51,15 @@ This document describes Acme::Hidek version 0.0001.
 
     use Acme::Hidek;
 
+    my $hidek = Acme::Hidek->new();
+
+    $hidek->birthdate;   # => 1970/9/2
+    $hidek->is_birthday; # true if the day is 9/2
+    $hidek->age;         # the current age
+
 =head1 DESCRIPTION
 
-Acme::Hidek provides blah blah blah.
-
-=head1 INTERFACE
-
-=head2 Class methods
-
-=over 4
-
-=item *
-
-=back
-
-=head2 Instance methods
-
-=over 4
-
-=item *
-
-=back
-
+Acme::Hidek provides features about hidek.
 
 =head1 DEPENDENCIES
 
@@ -86,7 +73,7 @@ to cpan-RT.
 
 =head1 SEE ALSO
 
-L<perl>
+L<http://hidek.info>
 
 =head1 AUTHOR
 

@@ -9,6 +9,6 @@ my $hidek = Acme::Hidek->new();
 
 is $hidek->birthdate->year,  1970;
 is $hidek->birthdate->mon,      9;
-is $hidek->birthdate->mday,     1;
+is $hidek->birthdate->mday,     2;
 
 done_testing;
