@@ -1,8 +1,15 @@
 package Acme::Hidek;
 
 use 5.008_001;
+use utf8;
 use Mouse;
 use Time::Piece;
+use Time::HiRes qw(sleep);
+
+if ($^O eq 'MSWin32') {
+   require 'Win32/Console/ANSI.pm';
+   binmode STDOUT => ":raw :encoding(cp932)";
+}
 
 our $VERSION = '0.0001';
 
@@ -33,6 +40,49 @@ has birthdate => (
 sub is_birthday {
     my $now = Time::Piece->now;
     return $now->mday == BIRTH_DAY && $now->mon == BIRTH_MONTH;
+}
+
+sub ossan {
+    my @aa = (
+        <<OPPAI
+　　　 _ 　∩
+　　(　゜∀゜)彡　\${WORD}
+　　(　 　　|　
+　 　|　　　|　
+　 　し ⌒Ｊ
+OPPAI
+        , <<OPPAI
+　　　 _ 　∩
+　　(　゜∀゜)彡　\${WORD}
+　　(　 ⊂彡
+　 　|　　　|　
+　 　し ⌒Ｊ
+OPPAI
+        , <<OPPAI
+　　　 _ 　
+　　(　゜∀゜)　　\${WORD}
+　　(　 ⊂彡
+　 　|　　　|　
+　 　し ⌒Ｊ
+OPPAI
+    );
+
+    my $a;
+    for (1..5) {
+        $a = $aa[0]; $a =~ s!\${WORD}!おっ！!;
+        print "\e[2J$a"; sleep 0.1;
+        $a = $aa[1]; $a =~ s!\${WORD}!おっ！!;
+        print "\e[2J$a"; sleep 0.1;
+        $a = $aa[2]; $a =~ s!\${WORD}!おっ！!;
+        print "\e[2J$a"; sleep 0.5;
+
+        $a = $aa[2]; $a =~ s!\${WORD}!おっさん！!;
+        print "\e[2J$a"; sleep 0.1;
+        $a = $aa[1]; $a =~ s!\${WORD}!おっさん！!;
+        print "\e[2J$a"; sleep 0.1;
+        $a = $aa[0]; $a =~ s!\${WORD}!おっさん！!;
+        print "\e[2J$a"; sleep 0.5;
+    }
 }
 
 no Mouse;
