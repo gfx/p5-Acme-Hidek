@@ -12,7 +12,7 @@ our $VERSION = '0.0001';
 use constant {
     BIRTH_YEAR  => 1970,
     BIRTH_MONTH => 9,
-    BIRTH_DAY   => 1,
+    BIRTH_DAY   => 2,
 };
 
 has age => (
@@ -26,7 +26,7 @@ has birthdate => (
     is       => 'ro',
     isa      => 'Object',
     lazy     => 1,
-    default  => sub { Time::Piece->strptime("1970/9/1", "%Y/%m/%d") },
+    default  => sub { Time::Piece->strptime("1970/9/2", "%Y/%m/%d") },
     init_arg => undef,
 );
 
