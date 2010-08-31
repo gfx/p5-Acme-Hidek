@@ -11,7 +11,7 @@ if ($^O eq 'MSWin32') {
    binmode STDOUT => ":raw :encoding(cp932)";
 }
 
-our $VERSION = '0.0001';
+our $VERSION = '40.0';
 
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
@@ -101,7 +101,7 @@ Acme::Hidek - Happy birthday hidek!
 
 =head1 VERSION
 
-This document describes Acme::Hidek version 0.0001.
+This document describes Acme::Hidek version 40.0.
 
 =head1 SYNOPSIS
 

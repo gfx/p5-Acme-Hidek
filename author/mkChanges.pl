@@ -10,7 +10,7 @@ my %vars = (
     range => [0 .. 40],
     year  => 2010,
     month => 9,
-    day   => 1,
+    day   => 2,
 );
 print $tx->render_string(<<'TX', \%vars);
 Revision history for Perl extension Acme::Hidek
