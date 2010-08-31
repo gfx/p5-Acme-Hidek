@@ -127,7 +127,8 @@ This document describes Acme::Hidek version 40.0.
 
     $hidek->birthdate;   # => 1970/9/2
     $hidek->is_birthday; # true if the day is 9/2
-    $hidek->age;         # the current age
+    $hidek->age;         # the current age (integer)
+    $hidek->agef;        # the current age (float)
 
 =head1 DESCRIPTION
 
