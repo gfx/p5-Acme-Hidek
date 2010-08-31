@@ -8,7 +8,10 @@ use Time::HiRes qw(sleep);
 
 if ($^O eq 'MSWin32') {
    require 'Win32/Console/ANSI.pm';
-   binmode STDOUT => ":raw :encoding(cp932)";
+   binmode STDOUT, ":raw :encoding(cp932)";
+}
+else if($^O eq 'cygwin') {
+    binmode STDOUT, ":raw :encoding(cp932)";
 }
 
 our $VERSION = '40.0';
