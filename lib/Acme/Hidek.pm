@@ -44,26 +44,32 @@ sub is_birthday {
 
 sub ossan {
     my @aa = (
-        <<OPPAI
+        <<'OPPAI'
 　　　 _ 　∩
-　　(　゜∀゜)彡　\${WORD}
+　　(　゜∀゜)彡　${WORD}
 　　(　 　　|　
 　 　|　　　|　
 　 　し ⌒Ｊ
+
+ contributed by @mattn_jp.
 OPPAI
-        , <<OPPAI
+        , <<'OPPAI'
 　　　 _ 　∩
-　　(　゜∀゜)彡　\${WORD}
+　　(　゜∀゜)彡　${WORD}
 　　(　 ⊂彡
 　 　|　　　|　
 　 　し ⌒Ｊ
+
+ contributed by @mattn_jp.
 OPPAI
-        , <<OPPAI
+        , <<'OPPAI'
 　　　 _ 　
-　　(　゜∀゜)　　\${WORD}
+　　(　゜∀゜)　　${WORD}
 　　(　 ⊂彡
 　 　|　　　|　
 　 　し ⌒Ｊ
+
+ contributed by @mattn_jp.
 OPPAI
     );
 
