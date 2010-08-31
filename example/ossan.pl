@@ -1,5 +1,5 @@
 #!perl
 use strict;
-use Acme::Hidek qw(ossan);
+use Acme::Hidek;
 
 Acme::Hidek::ossan;
