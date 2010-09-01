@@ -4,7 +4,7 @@ use warnings;
 
 my $package = __PACKAGE__;
 
-my $tie = "WE LOVE HIDEK!\n";
+my $tie = "WE LOVE HIDEK!\n\n";
 
 my @messages = (
     'Happy birthday,',
@@ -25,8 +25,8 @@ my @messages = (
 
 sub whiten {
     local $_ = unpack "b*", pop;
-    s/0/"$messages[rand @messages] hidek!\n"/ge;
-    s/1/"$messages[rand @messages] Hidek!\n"/ge;
+    s/0/"$messages[rand @messages] hidek!\n\n"/ge;
+    s/1/"$messages[rand @messages] Hidek!\n\n"/ge;
     $tie.$_;
 }
 sub brighten {
