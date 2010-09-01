@@ -10,8 +10,8 @@ if ($^O eq 'MSWin32') {
    require 'Win32/Console/ANSI.pm';
    binmode STDOUT, ":raw :encoding(cp932)";
 }
-elsif($^O eq 'cygwin') {
-    binmode STDOUT, ":raw :encoding(cp932)";
+elsif($ENV{CONSOLE_ENCODING}) {
+    binmode STDOUT, ":raw :encoding($ENV{CONSOLE_ENCODING})";
 }
 
 our $VERSION = '40.0';
@@ -113,7 +113,7 @@ __END__
 
 =head1 NAME
 
-Acme::Hidek - Hidek on Perls
+Acme::Hidek - Virtual net personality, Hidek, age 40
 
 =head1 VERSION
 
