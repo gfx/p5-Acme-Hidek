@@ -113,7 +113,7 @@ __END__
 
 =head1 NAME
 
-Acme::Hidek - Happy birthday hidek!
+Acme::Hidek - Hidek on Perls
 
 =head1 VERSION
 
@@ -125,14 +125,19 @@ This document describes Acme::Hidek version 40.0.
 
     my $hidek = Acme::Hidek->new();
 
-    $hidek->birthdate;   # => 1970/9/2
+    $hidek->birthdate;   # => 1970/9/2 (Time::Piece object)
     $hidek->is_birthday; # true if the day is 9/2
     $hidek->age;         # the current age (integer)
     $hidek->agef;        # the current age (float)
 
+    $hidek->we_love_hidek(); # => say congratulations to stdout
+
 =head1 DESCRIPTION
 
-Acme::Hidek provides features about hidek.
+Acme::Hidek provides APIs to access the information on hidek.
+
+This module is written to congratulate the 40th birthday of hidek.
+Happy birthday hidek!
 
 =head1 DEPENDENCIES
 
