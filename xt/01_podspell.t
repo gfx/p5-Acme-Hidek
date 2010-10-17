@@ -18,4 +18,4 @@ gfuji(at)cpan.org
 Acme::Hidek
 hidek
 APIs
-th[
+RT
