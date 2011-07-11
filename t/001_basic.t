@@ -15,6 +15,9 @@ is $hidek->birthdate->year,  1970;
 is $hidek->birthdate->mon,      9;
 is $hidek->birthdate->mday,     2;
 
+eval { $hidek->is_birthday };
+ok(!$@);
+
 {
     close STDOUT;
     open STDOUT, '>', \my $buff;
