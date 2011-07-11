@@ -54,7 +54,7 @@ has birthdate => (
 );
 
 sub is_birthday {
-    my $now = Time::Piece->now;
+    my $now = Time::Piece->new;
     return $now->mday == BIRTH_DAY && $now->mon == BIRTH_MONTH;
 }
 
