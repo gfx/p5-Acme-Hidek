@@ -2,4 +2,4 @@
 use strict;
 use Acme::Hidek;
 
-Acme::Hidek::ossan;
+Acme::Hidek::ossan41;
