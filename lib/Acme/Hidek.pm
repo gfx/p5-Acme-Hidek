@@ -58,7 +58,7 @@ sub is_birthday {
     return $now->mday == BIRTH_DAY && $now->mon == BIRTH_MONTH;
 }
 
-sub ossan {
+sub ossan40 {
     my @aa = (
         <<'OPPAI'
 　　　 _ 　∩
@@ -104,6 +104,43 @@ OPPAI
         print "\e[2J$a"; sleep 0.1;
         $a = $aa[0]; $a =~ s!\${WORD}!おっさん！!;
         print "\e[2J$a"; sleep 0.5;
+    }
+}
+
+sub ossan41 {
+    my @aa = (
+        <<'OPPAI'
+　　／⌒ヽ 
+　 ∩ ＾ω＾）　な　ん　だ 
+　 |　　 ⊂ﾉ 
+　｜　　 _⊃ 
+　 し ⌒ 
+
+ contributed by @mattn_jp.
+OPPAI
+        , <<'OPPAI'
+　　／⌒ヽ 
+　（＾ω＾ ∩　４　１　か 
+　 t⊃　　｜ 
+　⊂_ 　　｜ 
+　　　⌒ J 
+
+ contributed by @mattn_jp.
+OPPAI
+        , <<'OPPAI'
+　　 　 ／⌒ヽ 
+　　　( 　　　　)　　おっおっおっ 
+　　 ／　　、 つ 
+　 （_(__ ⌒)ﾉ 
+　　 ∪ (ノ 
+
+ contributed by @mattn_jp.
+OPPAI
+    );
+
+    for (0..9) {
+        my $a = $aa[$_ % 3];
+        print "\e[2J$a"; sleep 1;
     }
 }
 
