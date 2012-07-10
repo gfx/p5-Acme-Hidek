@@ -150,7 +150,7 @@ __END__
 
 =head1 NAME
 
-Acme::Hidek - Virtual net personality, Hidek, age 40
+Acme::Hidek - Virtual net personality, Hidek, age 41
 
 =head1 VERSION
 
