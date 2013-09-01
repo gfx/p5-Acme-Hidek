@@ -146,6 +146,10 @@ Revision history for Perl extension Acme::Hidek (Hidek on Perls).
     (Perl 5.14 released in this year)
 
 42.0 2012/9/2
-    Acme++Hidek 42.0 released!
+    Acme::Hidek 42.0 released!
     Congrats on the age of 42, the answer to life, the universe and everything!
     (Perl 5.16 released in this year)
+
+43.0 2013/9/3
+    Acme::Hidek 43.0 released!
+    (Perl 5.18 released in this year)
