@@ -110,29 +110,29 @@ OPPAI
 sub ossan41 {
     my @aa = (
         <<'OPPAI'
-　　／⌒ヽ 
-　 ∩ ＾ω＾）　な　ん　だ 
-　 |　　 ⊂ﾉ 
-　｜　　 _⊃ 
-　 し ⌒ 
+　　／⌒ヽ
+　 ∩ ＾ω＾）　な　ん　だ
+　 |　　 ⊂ﾉ
+　｜　　 _⊃
+　 し ⌒
 
  contributed by @mattn_jp.
 OPPAI
         , <<'OPPAI'
-　　／⌒ヽ 
-　（＾ω＾ ∩　４　１　か 
-　 t⊃　　｜ 
-　⊂_ 　　｜ 
-　　　⌒ J 
+　　／⌒ヽ
+　（＾ω＾ ∩　４　１　か
+　 t⊃　　｜
+　⊂_ 　　｜
+　　　⌒ J
 
  contributed by @mattn_jp.
 OPPAI
         , <<'OPPAI'
-　　 　 ／⌒ヽ 
-　　　( 　　　　)　　おっおっおっ 
-　　 ／　　、 つ 
-　 （_(__ ⌒)ﾉ 
-　　 ∪ (ノ 
+　　 　 ／⌒ヽ
+　　　( 　　　　)　　おっおっおっ
+　　 ／　　、 つ
+　 （_(__ ⌒)ﾉ
+　　 ∪ (ノ
 
  contributed by @mattn_jp.
 OPPAI
@@ -150,7 +150,7 @@ __END__
 
 =head1 NAME
 
-Acme::Hidek - Virtual net personality, Hidek, age 41
+Acme::Hidek - Virtual net personality Hidek
 
 =head1 VERSION
 
