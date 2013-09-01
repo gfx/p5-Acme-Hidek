@@ -22,3 +22,4 @@ cover_db*
 *.gcov
 *.stackdump
 Acme-Hidek.c
+MYMETA.*
